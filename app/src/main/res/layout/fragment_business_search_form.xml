@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.184"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/keyword"-->
+<!--        android:layout_width="220dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="KeyWord"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.01" />-->
+    <AutoCompleteTextView
+        android:id="@+id/keyword"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/keywordHint"
+        android:ems="10" >
+    </AutoCompleteTextView>
+
+    <EditText
+        android:id="@+id/distance"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Distance" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/category_spinner"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/categoryLabel"
+        android:layout_width="83dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/categoryHint"
+        android:textColor="#D500F9"
+        android:textSize="14sp" />
+    <Spinner
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:inputType="text"
+        android:ems="10"
+        android:hint="@string/locationHint" />
+
+    <CheckBox
+        android:id="@+id/autoDetectLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#D500F9"
+        android:buttonTint="#D500F9"
+        android:text="Auto-detect my location" />
+
+    <LinearLayout
+        android:id="@+id/actions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp">
+        <Button
+            android:id="@+id/submitSearchForm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:text="SUBMIT"
+            android:layout_marginRight="40dp"
+            />
+        <Button
+            android:id="@+id/clearSearchForm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:text="CLEAR" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/resultsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Results"
+        android:textSize="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/no_result_message"
+        android:text="No results found!"
+        android:textColor="@color/red"
+        android:visibility="gone"/>
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/businessListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="50dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/businessList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

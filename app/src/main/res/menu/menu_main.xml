@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.anvitha.yelp_android.MainActivity2">
+    <item
+        android:id="@+id/action_reservations"
+        android:icon="@drawable/reservation"
+        android:title="Reservations"
+        app:showAsAction="always"/>
+    <!--        android:icon="@drawable/ic_favorite_black_48dp"-->
+</menu>

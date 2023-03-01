@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.anvitha.yelp_android.BusinessDetails">
+    <item
+        android:id="@+id/share_facebook"
+        android:icon="@drawable/facebook"
+        android:title="Facebook"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/share_twitter"
+        android:icon="@drawable/twitter"
+        android:title="Twitter"
+        app:showAsAction="always"/>
+</menu>

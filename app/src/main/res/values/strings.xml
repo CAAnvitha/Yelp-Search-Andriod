@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Yelp</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string-array name="categories_array">
+        <item>Default</item>
+        <item>Arts &amp; Entertainment</item>
+        <item>Health &amp; Medical</item>
+        <item>Hotels &amp; Travel</item>
+        <item>Food</item>
+        <item>Professional Services</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_business_details">BusinessDetails</string>
+    <string name="business_tab_1">BUSINESS DETAILS</string>
+    <string name="business_tab_2">MAP LOCATION</string>
+    <string name="business_tab_3">REVIEWS</string>
+    <string name="keywordHint">KeyWord <font color='#FF0000'>*</font></string>
+    <string name="categoryHint">Category <font color='#FF0000'>*</font></string>
+    <string name="locationHint">Location <font color='#FF0000'>*</font></string>
+</resources>
